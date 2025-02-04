@@ -14,14 +14,28 @@ body {
 
 #app {
   display: grid;
+  grid-template-columns: max-content max-content;
   grid-template-areas:
     "A B"
     "A C";
   gap: 32px;
+  place-content: center;
 }
 
 #player-1 {
   grid-area: A;
+  padding: 50px 38px;
+  width: fit-content;
+}
+
+#player-1 img {
+  width: 190px;
+  height: 190px;
+  opject-fit: cover;
+}
+
+#player-1 .wrapper {
+  width: 190px;
 }
 
 #player-2 {
@@ -33,5 +47,6 @@ body {
 }
 
 .player {
-  background-color: #2a2121;
+  background-color: #2a2141;
+  padding: 28px;
 }
